@@ -2,6 +2,14 @@
 
 import streamlit as st
 import pandas as pd
+
+try:
+    import matplotlib.pyplot as plt
+except Exception as e:
+    st.error(f"Matplotlib Error: {e}")
+
+import streamlit as st
+import pandas as pd
 import matplotlib.pyplot as plt
 
 # -----------------------------
